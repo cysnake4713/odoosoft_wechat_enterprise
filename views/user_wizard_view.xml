@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="view_wechat_enterprise_user_batch_wizard_form" model="ir.ui.view">
+            <field name="name">view.odoosoft.wechat.enterprise.user.batch.wizard.form</field>
+            <field name="model">odoosoft.wechat.enterprise.user.batch.wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="account"/>
+                            <field name="res_users"
+                                   domain="['&amp;',('wechat_user','=',False),'|','|',('wechat_login','!=',False),('mobile','!=',False),('email','!=',False)]"/>
+                            <field name="processed_users" widget="many2many_tags" readonly="1"/>
+                            <field name="create_users" readonly="1"/>
+                        </group>
+                        <separator string="创建结果"/>
+                        <field name="result" readonly="1"/>
+                    </sheet>
+                    <footer>
+                        <button name="button_batch_create" type="object" string="批量创建" class="oe_highlight"/>
+                        <!--<button name="button_batch_create_fast" type="object" string="异步批量创建" class="oe_highlight" confirm="异步批量创建用在一次需要创建大量微信账户的情况,如果需要创建的用户数量不超过10人,请尽量使用批量创建,异步创建完成后请关闭本窗口,等待一段时间后检查用户是否创建成功"/>-->
+                        or
+                        <button string="关闭" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_wechat_enterprise_user_batch_invite_wizard_form" model="ir.ui.view">
+            <field name="name">view.odoosoft.wechat.enterprise.user.batch.invite.wizard.form</field>
+            <field name="model">odoosoft.wechat.enterprise.user.batch.invite.wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="account_id" readonly="1"/>
+                        </group>
+                        <group>
+                            <field name="user_ids" nolabel="1" readonly="1"/>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button string="批量邀请" name="button_batch_invite" type="object" class="oe_highlight"/>
+                        or
+                        <button string="关闭" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</openerp>

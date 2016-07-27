@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="view_wechat_enterprise_message_tree" model="ir.ui.view">
+            <field name="name">view.odoosoft.wechat.enterprise.message.tree</field>
+            <field name="model">odoosoft.wechat.enterprise.message</field>
+            <field name="arch" type="xml">
+                <tree colors="blue:state=='draft';red:state=='fail'">
+                    <field name="application"/>
+                    <!--<field name="users"/>-->
+                    <field name="type"/>
+                    <field name="state"/>
+                    <field name="title"/>
+                    <field name="template"/>
+                    <field name="create_user"/>
+                    <field name="send_time"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_wechat_enterprise_message_form" model="ir.ui.view">
+            <field name="name">view.odoosoft.wechat.enterprise.message.form</field>
+            <field name="model">odoosoft.wechat.enterprise.message</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="sent_message" string="发送" type="object" states="draft"
+                                groups="odoosoft_wechat_enterprise.group_wechat_enterprise_message"/>
+                        <button name="sent_message" string="重发" type="object" states="send,fail"
+                                groups="odoosoft_wechat_enterprise.group_wechat_enterprise_message"/>
+                        <field name="state" widget="statusbar" readonly="1"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="application"/>
+                                <field name="type" widget="radio"/>
+                            </group>
+                            <group>
+                                <field name="res_model" readonly="1"/>
+                                <field name="res_id" readonly="1"/>
+                                <field name="res_name" readonly="1"/>
+                                <field name="create_user" readonly="1"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="departments" widget="many2many_tags"/>
+                            <field name="users" widget="many2many_tags"/>
+                            <field name="res_users" widget="many2many_tags"/>
+                        </group>
+                        <group attrs="{'invisible':[('type','not in', ['news', 'text'])]}" col="1">
+                            <separator string="消息内容"/>
+                            <field name="template"/>
+                            <field name="title" nolabel="1" placeholder="标题"/>
+                            <field name="content" nolabel="1" placeholder="正文"/>
+                        </group>
+                        <group attrs="{'invisible':[('type','not in', ['image'])]}" col="1">
+                            <separator string="文件"/>
+                            <field name="file" widget="many2many_binary" nolabel="1"/>
+                        </group>
+                        <separator string="发送结果"/>
+                        <field name="result" readonly="1"/>
+                        <group>
+                            <field name="send_time" readonly="1"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</openerp>

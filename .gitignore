@@ -1,0 +1,15 @@
+# sphinx build directories
+_build/
+/data
+/log
+# dotfiles
+.*
+!.gitignore
+!.gitmodules
+# compiled python files
+*.py[co]
+/odoo.conf
+# emacs backup files
+*~
+
+atlassian-ide-plugin.xml

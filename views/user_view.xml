@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="view_wechat_enterprise_user_tree" model="ir.ui.view">
+            <field name="name">view.odoosoft.wechat.enterprise.user.tree</field>
+            <field name="model">odoosoft.wechat.enterprise.user</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="login"/>
+                    <field name="user"/>
+                    <field name="wechat_login"/>
+                    <field name="mobile"/>
+                    <field name="email"/>
+                    <field name="account"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_wechat_enterprise_user_form" model="ir.ui.view">
+            <field name="name">view.odoosoft.wechat.enterprise.user.form</field>
+            <field name="model">odoosoft.wechat.enterprise.user</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="button_invite" string="邀请关注" type="object" class="oe_highlight" states="4"/>
+
+                        <button name="unlink_force" string="本地强制删除" type="object"
+                                groups="odoosoft_wechat_enterprise.group_wechat_enterprise_admin"/>
+                        <button name="create_force" string="远程强制创建" type="object"
+                                groups="odoosoft_wechat_enterprise.group_wechat_enterprise_admin"/>
+                        <button name="write_force" string="远程强制更新" type="object"
+                                groups="odoosoft_wechat_enterprise.group_wechat_enterprise_admin"/>
+                        <field name="state" widget="statusbar" readonly="1" statusbar_visible="1,4"/>
+                    </header>
+                    <sheet>
+                        <group invisible="1">
+                            <field name="id"/>
+                        </group>
+                        <div>
+                            <h1>
+                                <field name="login" readonly="1" required="0"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="account" attrs="{'readonly':[('id','!=',False)]}"/>
+                                <field name="user" context="{'is_no_wechat_sync':True}"/>
+                            </group>
+                            <newline/>
+                            <group>
+                                <field name="name"/>
+                                <field name="mobile"/>
+                                <field name="email"/>
+                                <field name="wechat_login"/>
+                            </group>
+                            <group>
+                                <field name="job"/>
+                                <field name="departments" widget="many2many_tags"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Inherit Form View to Modify it -->
+        <record id="view_wechat_enterprise_force_user_form" model="ir.ui.view">
+            <field name="name">view.odoosoft.wechat.enterprise.user.form.force</field>
+            <field name="model">odoosoft.wechat.enterprise.user</field>
+            <field name="inherit_id" ref="view_wechat_enterprise_user_form"/>
+            <field name="priority">99</field>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <field name="login" position="attributes">
+                    <attribute name="readonly" eval="0"/>
+                </field>
+                <xpath expr="//header" position="replace"/>
+                <xpath expr="//sheet" position="after">
+                    <footer>
+                        <button string="Create" name="button_save" type="signal" class="oe_highlight"/>
+                        or
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </xpath>
+
+            </field>
+        </record>
+
+        <!-- Inherit Form View to Modify it -->
+        <record id="view_wechat_enterprise_user_wizard_inherit" model="ir.ui.view">
+            <field name="name">view.odoosoft.wechat.enterprise.user.wizard.form.wechat</field>
+            <field name="model">odoosoft.wechat.enterprise.user.wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="account"/>
+                        <field name="mobile"/>
+                        <field name="email"/>
+                        <field name="wechat_login"/>
+                    </group>
+                    <footer>
+                        <button name="create_wechat_user" type="object" string="创建" class="oe_highlight"/>
+                        or
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_wechat_enterprise_user_wizard" model="ir.actions.act_window">
+            <field name="name">创建关联微信账户</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">odoosoft.wechat.enterprise.user.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_wechat_enterprise_user_wizard_inherit"/>
+            <field name="target">new</field>
+        </record>
+
+        <!-- Inherit Form View to Modify it -->
+        <record id="view_res_users_form_inherit" model="ir.ui.view">
+            <field name="name">view.res.users.form.wechat</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[last()]" position="after">
+                    <page string="微信" groups="odoosoft_wechat_enterprise.group_wechat_enterprise_user">
+                        <button name="%(action_wechat_enterprise_user_wizard)d" type="action" string="创建并且绑定微信账户"
+                                groups="odoosoft_wechat_enterprise.group_wechat_enterprise_contact"/>
+                        <group>
+                            <field name="wechat_login"/>
+                        </group>
+                        <field name="wechat_user" readonly="1">
+                            <tree>
+                                <field name="account"/>
+                                <field name="login"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Inherit Form View to Modify it -->
+        <record id="view_users_form_simple_modif_inheirt" model="ir.ui.view">
+            <field name="name">res.users.preferences.form.inherit.wechat</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form_simple_modif"/>
+            <field name="arch" type="xml">
+                <field name="email" position="after">
+                    <field name="wechat_login" readonly="0"/>
+                </field>
+            </field>
+        </record>
+
+        <!-- Inherit Form View to Modify it -->
+        <record id="view_users_simple_form_inherit" model="ir.ui.view">
+            <field name="name">res.users.simplified.form.inherit.wechat</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_simple_form"/>
+            <field name="arch" type="xml">
+                <field name="mobile" position="after">
+                    <field name="wechat_login" readonly="0"/>
+                </field>
+            </field>
+        </record>
+
+        <!--<function model="res.groups" name="update_user_groups_view"/>-->
+    </data>
+</openerp>

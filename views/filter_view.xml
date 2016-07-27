@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="view_wechat_enterprise_filter_search" model="ir.ui.view">
+            <field name="name">view.odoosoft.wechat.enterprise.filter.search</field>
+            <field name="model">odoosoft.wechat.enterprise.filter</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="sequence"/>
+                    <field name="name"/>
+                    <field name="application"/>
+                    <group string="过滤">
+                        <filter string="未激活" domain="[('active','=',False)]"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+        <record id="view_wechat_enterprise_filter_tree" model="ir.ui.view">
+            <field name="name">view.odoosoft.wechat.enterprise.filter.tree</field>
+            <field name="model">odoosoft.wechat.enterprise.filter</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="sequence"/>
+                    <field name="name"/>
+                    <field name="type"/>
+                    <field name="active"/>
+                    <field name="application"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_wechat_enterprise_filter_form" model="ir.ui.view">
+            <field name="name">view.odoosoft.wechat.enterprise.filter.form</field>
+            <field name="model">odoosoft.wechat.enterprise.filter</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" placeholder="名称" required="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="application"/>
+                                <field name="sequence"/>
+                            </group>
+                            <group>
+                                <field name="template"/>
+                                <field name="active"/>
+                            </group>
+                        </group>
+                        <group string="匹配" col="1">
+                            <group>
+                                <group>
+                                    <field name="type" required="1"/>
+                                </group>
+                                <group>
+                                    <field name="event_type" attrs="{'invisible':[('type','!=','event')], 'required':[('type','=','event')]}"/>
+                                </group>
+                            </group>
+                            <p class="oe_edit_only">
+                                <div attrs="{'invisible':[('type','=','event')]}">
+                                    msg结构提示
+                                    <br/>
+                                    type: 消息类型
+                                    <br/>
+                                    source: 成员UserID
+                                </div>
+                                <div attrs="{'invisible':[('type','!=','event')]}">
+                                    msg结构提示
+                                    <br/>
+                                    event: 事件类型
+                                </div>
+                                <div attrs="{'invisible':[('type','!=','text')]}">
+                                    content: 文本消息内容
+                                </div>
+                                <div attrs="{'invisible':[('type','!=','image')]}">
+                                    image: 图片链接
+                                    <br/>
+                                    media_id: 图片媒体文件id，可以调用获取媒体文件接口拉取数据
+                                </div>
+                                <div attrs="{'invisible':[('type','!=','voice')]}">
+                                    format: 语音格式，如amr，speex等
+                                    <br/>
+                                    media_id: 语音媒体文件id，可以调用获取媒体文件接口拉取数据
+                                    <br/>
+                                    recognition:
+                                </div>
+                                <div attrs="{'invisible':[('type','!=','video')]}">
+                                    thumb_media_id: 视频消息缩略图的媒体id，可以调用获取媒体文件接口拉取数据
+                                    <br/>
+                                    media_id: 视频媒体文件id，可以调用获取媒体文件接口拉取数据
+                                </div>
+                                <div attrs="{'invisible':[('type','!=','location')]}">
+                                    location_x: 地理位置纬度
+                                    <br/>
+                                    location_y: 地理位置经度
+                                    <br/>
+                                    scale: 地图缩放大小
+                                    <br/>
+                                    label: 地理位置信息
+                                </div>
+                                <!--event msg-->
+                                <div attrs="{'invisible':['|',('type','!=','event'),('event_type','!=','location')]}">
+                                    latitude: 地理位置纬度
+                                    <br/>
+                                    longitude: 地理位置经度
+                                    <br/>
+                                    precision: 地理位置精度
+                                </div>
+                                <div attrs="{'invisible':['|',('type','!=','event'),('event_type','!=','click')]}">
+                                    key: 事件KEY值，与自定义菜单接口中KEY值对应
+                                </div>
+
+
+                                <div attrs="{'invisible':['|',('type','!=','event'),('event_type','!=','view')]}">
+                                    url: 事件KEY值，设置的跳转URL
+                                </div>
+                                <div attrs="{'invisible':['|',('type','!=','event'),('event_type','not in',['scancode_push', 'scancode_waitmsg'])]}">
+                                    key: 事件KEY值，由开发者在创建菜单时设定
+                                    <br/>
+                                    scan_code_info: 扫描信息
+                                    <br/>
+                                    scan_type: 扫描类型，一般是qrcode
+                                    <br/>
+                                    scan_result: 扫描结果，即二维码对应的字符串信息
+                                </div>
+                                <div attrs="{'invisible':['|',('type','!=','event'),('event_type','not in',['pic_sysphoto', 'pic_photo_or_album', 'pic_weixin'])]}">
+                                    key: 事件KEY值，由开发者在创建菜单时设定
+                                    <br/>
+                                    pictures_info: 发送的图片信息
+                                    <br/>
+                                    count: 发送的图片数量
+                                    <br/>
+                                    pictures: 图片列表
+                                </div>
+                                <div attrs="{'invisible':['|',('type','!=','event'),('event_type','!=','location_select')]}">
+                                    key: 事件KEY值，由开发者在创建菜单时设定
+                                    <br/>
+                                    location_info: 发送的位置信息
+                                    <br/>
+                                    location_x: X坐标信息
+                                    <br/>
+                                    location_y: Y坐标信息
+                                    <br/>
+                                    location: x, y
+                                    <br/>
+                                    scale: 精度，可理解为精度或者比例尺、越精细的话 scale越高
+                                    <br/>
+                                    label: 地理位置的字符串信息
+                                    <br/>
+                                    poiname: 朋友圈POI的名字，可能为空
+                                </div>
+                                <div attrs="{'invisible':['|',('type','!=','event'),('event_type','!=','enter_agent')]}">
+                                    agent: 应用ID
+                                </div>
+                                <div attrs="{'invisible':['|',('type','!=','event'),('event_type','!=','batch_job_result')]}">
+                                    job_id: 异步任务id，最大长度为64字符
+                                    <br/>
+                                    job_type: 操作类型，字符串，目前分别有：
+                                    <br/>
+                                    1. sync_user(增量更新成员)
+                                    <br/>
+                                    2. replace_user(全量覆盖成员)
+                                    <br/>
+                                    3. invite_user(邀请成员关注)
+                                    <br/>
+                                    4. replace_party(全量覆盖部门)
+                                    <br/>
+                                    err_code: 返回码
+                                    <br/>
+                                    err_msg: 对返回码的文本描述内容
+                                </div>
+                            </p>
+                            <field name="match" nolabel="1" widget="code_editor" code_type="python"/>
+                        </group>
+                        <group string="返回" col="1">
+                            <group>
+                                <field name="reply_type"/>
+                            </group>
+                            <p class="oe_edit_only">
+                                reply结构提示:
+                                <br/>
+                                type:回复类型
+                                <br/>
+                                source:回复的来源用户，通常是发送回复的用户
+                                <br/>
+                                target:回复的目标用户
+                                <br/>
+                                time:回复的发送时间，一个 UNIX 时间戳
+                                <br/>
+                                <div attrs="{'invisible':[('reply_type','!=','text')]}">
+                                    content:回复正文
+                                </div>
+                                <div attrs="{'invisible':[('reply_type','!=','image')]}">
+                                    media_id:通过上传多媒体文件，得到的 id
+                                </div>
+                                <div attrs="{'invisible':[('reply_type','!=','voice')]}">
+                                    media_id:通过上传多媒体文件，得到的 id
+                                </div>
+                                <div attrs="{'invisible':[('reply_type','!=','video')]}">
+                                    media_id:通过上传多媒体文件，得到的 id
+                                    <br/>
+                                    title:视频回复的标题
+                                    <br/>
+                                    description:视频回复的描述
+                                </div>
+                                <div attrs="{'invisible':[('reply_type','!=','news')]}">
+                                    你需要给 ArticlesReply 添加 article 来增加图文，使用 ArticlesReply 的 add_article 方法或者设置 ArticlesReply 的 articles 属性。
+                                    <br/>
+                                    articles 应当是 [{}] 的对象（只要其能响应和 dict 一致的 get 方法即可），其应当包含如下属性(键值):
+                                    <br/>
+                                    title:图文回复标题
+                                    <br/>
+                                    description:图文回复描述
+                                    <br/>
+                                    image:图片链接
+                                    <br/>
+                                    url:点击图文消息跳转链接
+                                </div>
+                            </p>
+                            <field name="action" nolabel="1" widget="code_editor" code_type="python"/>
+                        </group>
+                        <group>
+                            <field name="is_template"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</openerp>

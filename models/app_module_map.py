@@ -1,0 +1,19 @@
+__author__ = 'cysnake4713'
+# coding=utf-8
+from openerp import tools
+from openerp import models, fields, api
+from openerp.tools.translate import _
+
+
+class AppModuleMap(models.Model):
+    _name = 'odoosoft.wechat.enterprise.map'
+    _rec_name = 'code'
+
+    code = fields.Char('Code', required=True)
+    application = fields.Many2one('odoosoft.wechat.enterprise.application', 'Enterprise Application')
+
+    _sql_constraints = [('wechat_map_code_unique', 'unique(code)', _('code must be unique !'))]
+
+    @api.model
+    def get_map(self, code):
+        return self.search([('code', '=', code)]).application

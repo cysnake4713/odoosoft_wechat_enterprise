@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="view_odoosoft_wechat_enterprise_log_tree" model="ir.ui.view">
+            <field name="name">view.odoosoft.wechat.enterprise.log.tree</field>
+            <field name="model">odoosoft.wechat.enterprise.log</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="message"/>
+                    <field name="create_date"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</openerp>

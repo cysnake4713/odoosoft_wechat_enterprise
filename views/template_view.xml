@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+        <record id="view_wechat_enterprise_template_tree" model="ir.ui.view">
+            <field name="name">view.odoosoft.wechat.enterprise.message.template.tree</field>
+            <field name="model">odoosoft.wechat.enterprise.message.template</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="title"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_wechat_enterprise_template_form" model="ir.ui.view">
+            <field name="name">view.odoosoft.wechat.enterprise.message.template.form</field>
+            <field name="model">odoosoft.wechat.enterprise.message.template</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="code"/>
+                            <field name="url"/>
+                            <field name="is_no_url"/>
+                        </group>
+                        <div class="oe_edit_only">
+                            <p>
+
+                            </p>
+                        </div>
+                        <separator string="标题"/>
+                        <field name="title"/>
+                        <separator string="正文"/>
+                        <field name="content"/>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</openerp>

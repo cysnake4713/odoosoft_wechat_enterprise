@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="view_wechat_settings" model="ir.ui.view">
+            <field name="name">wechat settings</field>
+            <field name="model">odoosoft.wechat.config.settings</field>
+            <field name="arch" type="xml">
+                <form string="Wechat Settings" class="oe_form_configuration">
+                    <header>
+                        <button string="确认" type="object" name="execute" class="oe_highlight"/>
+                        or
+                        <button string="取消" type="object" name="cancel" class="oe_link"/>
+                    </header>
+
+                    <group string="表单默认值默认值">
+                        <field name="default_account"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+    </data>
+</openerp>

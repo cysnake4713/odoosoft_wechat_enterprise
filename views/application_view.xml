@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="view_wechat_enterprise_application_tree" model="ir.ui.view">
+            <field name="name">view.odoosoft.wechat.enterprise.application.tree</field>
+            <field name="model">odoosoft.wechat.enterprise.application</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="application_id"/>
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="account"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_wechat_enterprise_application_form" model="ir.ui.view">
+            <field name="name">view.odoosoft.wechat.enterprise.application.form</field>
+            <field name="model">odoosoft.wechat.enterprise.application</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="code"/>
+                            <field name="account"/>
+                            <field name="application_id"/>
+                            <field name="token" groups="odoosoft_wechat_enterprise.group_wechat_enterprise_admin"/>
+                            <field name="ase_key" groups="odoosoft_wechat_enterprise.group_wechat_enterprise_admin"/>
+                            <field name="filters" readonly="1"/>
+                        </group>
+                        <div>
+                            <p>回调地址为:<field name="url"/></p>
+                        </div>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</openerp>

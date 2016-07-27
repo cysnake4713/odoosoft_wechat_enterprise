@@ -1,0 +1,1210 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* odoosoft_wechat_enterprise
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-28 05:01+0000\n"
+"PO-Revision-Date: 2015-09-28 05:01+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "1. sync_user(增量更新成员)"
+msgstr "1. sync_user(增量更新成员)"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "2. replace_user(全量覆盖成员)"
+msgstr "2. replace_user(全量覆盖成员)"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "3. invite_user(邀请成员关注)"
+msgstr "3. invite_user(邀请成员关注)"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "4. replace_party(全量覆盖部门)"
+msgstr "4. replace_party(全量覆盖部门)"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.department,account:0
+#: field:odoosoft.wechat.enterprise.user,account:0
+#: field:odoosoft.wechat.enterprise.user.batch.invite.wizard,account_id:0
+#: field:odoosoft.wechat.enterprise.user.batch.wizard,account:0
+#: field:odoosoft.wechat.enterprise.user.wizard,account:0
+msgid "Account"
+msgstr "企业号"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.filter,action:0
+msgid "Action"
+msgstr "动作"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.user,active:0
+msgid "Active"
+msgstr "激活"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.filter,application:0
+#: field:odoosoft.wechat.enterprise.message,application:0
+msgid "Application"
+msgstr "企业号应用"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.application,application_id:0
+msgid "Application ID"
+msgstr "应用 ID"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.model,name:odoosoft_wechat_enterprise.model_odoosoft_wechat_enterprise_user_batch_invite_wizard
+msgid "Batch Invite Wizard"
+msgstr "批量邀请"
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.filter,event_type:0
+msgid "CLICK"
+msgstr "点击菜单拉取消息"
+
+#. module: odoosoft_wechat_enterprise
+#: code:addons/odoosoft_wechat_enterprise/models/user.py:126
+#, python-format
+msgid "Can't delete two account's user in one time."
+msgstr "不能同时删除不同企业号下的用户信息."
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.user:odoosoft_wechat_enterprise.view_wechat_enterprise_force_user_form
+#: view:odoosoft.wechat.enterprise.user.wizard:odoosoft_wechat_enterprise.view_wechat_enterprise_user_wizard_inherit
+msgid "Cancel"
+msgstr "取消"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.department,children_ids:0
+msgid "Children"
+msgstr "子部门"
+
+#. module: odoosoft_wechat_enterprise
+#: code:addons/odoosoft_wechat_enterprise/models/user.py:387
+#, python-format
+msgid "Choose multi accounts users in one sync or no user need to be invited!"
+msgstr "你不能同时邀请不同企业号下的用户或者没有可以进行邀请的用户!"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.account,code:0
+#: field:odoosoft.wechat.enterprise.application,code:0
+#: field:odoosoft.wechat.enterprise.map,code:0
+#: field:odoosoft.wechat.enterprise.message.template,code:0
+msgid "Code"
+msgstr "标示码"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.message,content:0
+#: field:odoosoft.wechat.enterprise.message.template,content:0
+msgid "Content"
+msgstr "内容"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.account,corp_id:0
+msgid "CorpID"
+msgstr "CorpID"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.account,corpsecret:0
+msgid "Corpsecret"
+msgstr "Corpsecret"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.user:odoosoft_wechat_enterprise.view_wechat_enterprise_force_user_form
+msgid "Create"
+msgstr "创建"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.log,create_date:0
+msgid "Create Datetime"
+msgstr "创建时间"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.message,create_user:0
+msgid "Create User"
+msgstr "创建人"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.user.batch.wizard,create_users:0
+msgid "Create Users"
+msgstr "创建的账户"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.account,create_uid:0
+#: field:odoosoft.wechat.enterprise.application,create_uid:0
+#: field:odoosoft.wechat.enterprise.department,create_uid:0
+#: field:odoosoft.wechat.enterprise.filter,create_uid:0
+#: field:odoosoft.wechat.enterprise.log,create_uid:0
+#: field:odoosoft.wechat.enterprise.map,create_uid:0
+#: field:odoosoft.wechat.enterprise.message,create_uid:0
+#: field:odoosoft.wechat.enterprise.message.template,create_uid:0
+#: field:odoosoft.wechat.enterprise.user,create_uid:0
+#: field:odoosoft.wechat.enterprise.user.batch.invite.wizard,create_uid:0
+#: field:odoosoft.wechat.enterprise.user.batch.wizard,create_uid:0
+#: field:odoosoft.wechat.enterprise.user.wizard,create_uid:0
+msgid "Created by"
+msgstr "Created by"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.account,create_date:0
+#: field:odoosoft.wechat.enterprise.application,create_date:0
+#: field:odoosoft.wechat.enterprise.department,create_date:0
+#: field:odoosoft.wechat.enterprise.filter,create_date:0
+#: field:odoosoft.wechat.enterprise.map,create_date:0
+#: field:odoosoft.wechat.enterprise.message,create_date:0
+#: field:odoosoft.wechat.enterprise.message.template,create_date:0
+#: field:odoosoft.wechat.enterprise.user,create_date:0
+#: field:odoosoft.wechat.enterprise.user.batch.invite.wizard,create_date:0
+#: field:odoosoft.wechat.enterprise.user.batch.wizard,create_date:0
+#: field:odoosoft.wechat.enterprise.user.wizard,create_date:0
+msgid "Created on"
+msgstr "Created on"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.message,departments:0
+#: field:odoosoft.wechat.enterprise.user,departments:0
+msgid "Departments"
+msgstr "部门"
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.message,state:0
+msgid "Draft"
+msgstr "草稿"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.user,email:0
+#: field:odoosoft.wechat.enterprise.user.wizard,email:0
+msgid "Email"
+msgstr "Email"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.application,ase_key:0
+msgid "EncodingAESKey"
+msgstr "EncodingAESKey"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.application,account:0
+msgid "Enterprise Account"
+msgstr "企业号"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.map,application:0
+msgid "Enterprise Application"
+msgstr "企业号应用"
+
+#. module: odoosoft_wechat_enterprise
+#: code:addons/odoosoft_wechat_enterprise/models/department.py:41
+#, python-format
+msgid "Error! You cannot create recursive Type."
+msgstr "错误!你不能创建包含循环的部门结构."
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.filter,type:0
+msgid "Event"
+msgstr "事件"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.filter,event_type:0
+msgid "Event Type"
+msgstr "事件类型"
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.message,state:0
+msgid "Fail"
+msgstr "失败"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.application,filters:0
+msgid "Filters"
+msgstr "过滤器"
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.user,state:0
+msgid "Frozen"
+msgstr "冻结"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.account,id:0
+#: field:odoosoft.wechat.enterprise.application,id:0
+#: field:odoosoft.wechat.enterprise.department,id:0
+#: field:odoosoft.wechat.enterprise.filter,id:0
+#: field:odoosoft.wechat.enterprise.log,id:0
+#: field:odoosoft.wechat.enterprise.map,id:0
+#: field:odoosoft.wechat.enterprise.message,id:0
+#: field:odoosoft.wechat.enterprise.message.template,id:0
+#: field:odoosoft.wechat.enterprise.user,id:0
+#: field:odoosoft.wechat.enterprise.user.batch.invite.wizard,id:0
+#: field:odoosoft.wechat.enterprise.user.batch.wizard,id:0
+#: field:odoosoft.wechat.enterprise.user.wizard,id:0
+#: field:wechat.enterprise.abstract,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.filter,reply_type:0
+#: selection:odoosoft.wechat.enterprise.filter,type:0
+#: selection:odoosoft.wechat.enterprise.message,type:0
+msgid "Image"
+msgstr "图片"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.message,file:0
+msgid "Image File"
+msgstr "文件"
+
+#. module: odoosoft_wechat_enterprise
+#: code:addons/odoosoft_wechat_enterprise/models/user.py:398
+#, python-format
+msgid "Invite Already send"
+msgstr "邀请已经发送"
+
+#. module: odoosoft_wechat_enterprise
+#: code:addons/odoosoft_wechat_enterprise/models/user.py:397
+#, python-format
+msgid "Invite Send"
+msgstr "邀请发送"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.filter,active:0
+msgid "Is Active"
+msgstr "激活"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.message.template,is_no_url:0
+msgid "Is No Url"
+msgstr "没有url"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.filter,is_system:0
+msgid "Is System"
+msgstr "系统级"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.filter,is_template:0
+msgid "Is Template"
+msgstr "模板"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.user,job:0
+msgid "Job"
+msgstr "职位"
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.filter,event_type:0
+msgid "LOCATION"
+msgstr "上报地理位置"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.account,write_uid:0
+#: field:odoosoft.wechat.enterprise.application,write_uid:0
+#: field:odoosoft.wechat.enterprise.department,write_uid:0
+#: field:odoosoft.wechat.enterprise.filter,write_uid:0
+#: field:odoosoft.wechat.enterprise.log,write_uid:0
+#: field:odoosoft.wechat.enterprise.map,write_uid:0
+#: field:odoosoft.wechat.enterprise.message,write_uid:0
+#: field:odoosoft.wechat.enterprise.message.template,write_uid:0
+#: field:odoosoft.wechat.enterprise.user,write_uid:0
+#: field:odoosoft.wechat.enterprise.user.batch.invite.wizard,write_uid:0
+#: field:odoosoft.wechat.enterprise.user.batch.wizard,write_uid:0
+#: field:odoosoft.wechat.enterprise.user.wizard,write_uid:0
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.account,write_date:0
+#: field:odoosoft.wechat.enterprise.application,write_date:0
+#: field:odoosoft.wechat.enterprise.department,write_date:0
+#: field:odoosoft.wechat.enterprise.filter,write_date:0
+#: field:odoosoft.wechat.enterprise.log,write_date:0
+#: field:odoosoft.wechat.enterprise.map,write_date:0
+#: field:odoosoft.wechat.enterprise.message,write_date:0
+#: field:odoosoft.wechat.enterprise.message.template,write_date:0
+#: field:odoosoft.wechat.enterprise.user,write_date:0
+#: field:odoosoft.wechat.enterprise.user.batch.invite.wizard,write_date:0
+#: field:odoosoft.wechat.enterprise.user.batch.wizard,write_date:0
+#: field:odoosoft.wechat.enterprise.user.wizard,write_date:0
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.filter,type:0
+msgid "Location"
+msgstr "地理位置"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.ui.menu,name:odoosoft_wechat_enterprise.menuitem_wechat_log_user
+msgid "Log"
+msgstr "日志"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.user,login:0
+msgid "Login"
+msgstr "登录名"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.filter,match:0
+msgid "Match"
+msgstr "匹配"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.log,message:0
+msgid "Message"
+msgstr "信息"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.filter,type:0
+#: field:odoosoft.wechat.enterprise.message,type:0
+msgid "Message Type"
+msgstr "消息类型"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.user,mobile:0
+#: field:odoosoft.wechat.enterprise.user.wizard,mobile:0
+msgid "Mobile"
+msgstr "手机"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.account,name:0
+#: field:odoosoft.wechat.enterprise.application,name:0
+#: field:odoosoft.wechat.enterprise.filter,name:0
+#: field:odoosoft.wechat.enterprise.log,name:0
+#: field:odoosoft.wechat.enterprise.message.template,name:0
+#: field:odoosoft.wechat.enterprise.user,name:0
+msgid "Name"
+msgstr "名称"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.user.batch.invite.wizard,user_ids:0
+msgid "Need Invite Users"
+msgstr "待邀请用户"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.user.batch.wizard,res_users:0
+msgid "Need Process Users"
+msgstr "待处理用户"
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.filter,reply_type:0
+#: selection:odoosoft.wechat.enterprise.message,type:0
+msgid "News"
+msgstr "News"
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.user,state:0
+msgid "Not Stared"
+msgstr "未关注"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.model,name:odoosoft_wechat_enterprise.model_odoosoft_wechat_enterprise_message_template
+msgid "Odoosoft Wechat Enterprise Message Template"
+msgstr "企业号消息模板"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.department,order:0
+msgid "Order"
+msgstr "排序"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.department,parent_id:0
+msgid "Parent"
+msgstr "父部门"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.user.batch.wizard,processed_users:0
+msgid "Processed Users"
+msgstr "已处理用户"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.message,template:0
+msgid "Related Message Template"
+msgstr "相关消息模板"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.filter,reply_type:0
+msgid "Reply Type"
+msgstr "回复类型"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.message,res_id:0
+msgid "Res Id"
+msgstr "Res Id"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.message,res_model:0
+msgid "Res Model Name"
+msgstr "Res Model Name"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.message,res_name:0
+msgid "Res Name"
+msgstr "Res Name"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.message,res_users:0
+msgid "Res Users"
+msgstr "接收人(系统账户)"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.user.batch.wizard,result:0
+msgid "Result"
+msgstr "结果"
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.message,state:0
+msgid "Send"
+msgstr "已发送"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.message,send_time:0
+msgid "Send Time"
+msgstr "发送时间"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.filter,sequence:0
+msgid "Sequence"
+msgstr "序列"
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.user,state:0
+msgid "Server No Match"
+msgstr "本地未匹配"
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.user,state:0
+msgid "Stared"
+msgstr "已关注"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.user,state:0
+msgid "State"
+msgstr "状态"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.message,state:0
+msgid "Status"
+msgstr "状态"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.actions.server,name:odoosoft_wechat_enterprise.action_sync_wechat_server_manual
+msgid "Sync Wechat Server Manual"
+msgstr "手动同步服务器"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.filter,template:0
+msgid "Template"
+msgstr "模板"
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.filter,reply_type:0
+#: selection:odoosoft.wechat.enterprise.filter,type:0
+#: selection:odoosoft.wechat.enterprise.message,type:0
+msgid "Text"
+msgstr "文本"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.message,title:0
+#: field:odoosoft.wechat.enterprise.message.template,title:0
+msgid "Title"
+msgstr "标题"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.application,token:0
+msgid "Token"
+msgstr "Token"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.message.template,url:0
+msgid "URL"
+msgstr "URL"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.user,user:0
+#: field:odoosoft.wechat.enterprise.user.wizard,user:0
+msgid "User"
+msgstr "用户"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.model,name:odoosoft_wechat_enterprise.model_res_users
+#: field:odoosoft.wechat.enterprise.department,users:0
+#: field:odoosoft.wechat.enterprise.message,users:0
+msgid "Users"
+msgstr "用户"
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.filter,event_type:0
+msgid "VIEW"
+msgstr "点击菜单跳转链接"
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.filter,reply_type:0
+#: selection:odoosoft.wechat.enterprise.filter,type:0
+msgid "Video"
+msgstr "视频"
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.filter,reply_type:0
+#: selection:odoosoft.wechat.enterprise.filter,type:0
+msgid "Voice"
+msgstr "语音"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.user,wechat_login:0
+#: field:odoosoft.wechat.enterprise.user.wizard,wechat_login:0
+#: field:res.users,wechat_login:0
+#: field:res.users,wechat_user:0
+msgid "Wechat Account"
+msgstr "微信账号"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.model,name:odoosoft_wechat_enterprise.model_wechat_enterprise_abstract
+msgid "Wechat Enterprise Abstract Model"
+msgstr "Wechat Enterprise Abstract Model"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.model,name:odoosoft_wechat_enterprise.model_odoosoft_wechat_enterprise_department
+msgid "Wechat Enterprise Department"
+msgstr "微信部门"
+
+#. module: odoosoft_wechat_enterprise
+#: code:addons/odoosoft_wechat_enterprise/models/department.py:109
+#, python-format
+msgid "You can't delete department which have sub department."
+msgstr "你不能删除一个含有子部门的部门."
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "agent: 应用ID"
+msgstr "agent: 应用ID"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "articles 应当是 [{}] 的对象（只要其能响应和 dict 一致的 get 方法即可），其应当包含如下属性(键值):"
+msgstr "articles 应当是 [{}] 的对象（只要其能响应和 dict 一致的 get 方法即可），其应当包含如下属性(键值):"
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.filter,event_type:0
+msgid "batch_job_result"
+msgstr "异步任务完成"
+
+#. module: odoosoft_wechat_enterprise
+#: code:addons/odoosoft_wechat_enterprise/models/account.py:17
+#: code:addons/odoosoft_wechat_enterprise/models/account.py:46
+#: code:addons/odoosoft_wechat_enterprise/models/app_module_map.py:15
+#, python-format
+msgid "code must be unique !"
+msgstr "标示码不能重复!"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "content: 文本消息内容"
+msgstr "content: 文本消息内容"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "content:回复正文"
+msgstr "content:回复正文"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "count: 发送的图片数量"
+msgstr "count: 发送的图片数量"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "description:图文回复描述"
+msgstr "description:图文回复描述"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "description:视频回复的描述"
+msgstr "description:视频回复的描述"
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.filter,event_type:0
+msgid "enter_agent"
+msgstr "成员进入应用"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "err_code: 返回码"
+msgstr "err_code: 返回码"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "err_msg: 对返回码的文本描述内容"
+msgstr "err_msg: 对返回码的文本描述内容"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "event: 事件类型"
+msgstr "event: 事件类型"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "format: 语音格式，如amr，speex等"
+msgstr "format: 语音格式，如amr，speex等"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "image: 图片链接"
+msgstr "image: 图片链接"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "image:图片链接"
+msgstr "image:图片链接"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "job_id: 异步任务id，最大长度为64字符"
+msgstr "job_id: 异步任务id，最大长度为64字符"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "job_type: 操作类型，字符串，目前分别有："
+msgstr "job_type: 操作类型，字符串，目前分别有："
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "key: 事件KEY值，与自定义菜单接口中KEY值对应"
+msgstr "key: 事件KEY值，与自定义菜单接口中KEY值对应"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "key: 事件KEY值，由开发者在创建菜单时设定"
+msgstr "key: 事件KEY值，由开发者在创建菜单时设定"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "label: 地理位置信息"
+msgstr "label: 地理位置信息"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "label: 地理位置的字符串信息"
+msgstr "label: 地理位置的字符串信息"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "latitude: 地理位置纬度"
+msgstr "latitude: 地理位置纬度"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "location: x, y"
+msgstr "location: x, y"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "location_info: 发送的位置信息"
+msgstr "location_info: 发送的位置信息"
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.filter,event_type:0
+msgid "location_select"
+msgstr "弹出地理位置选择器"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "location_x: X坐标信息"
+msgstr "location_x: X坐标信息"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "location_x: 地理位置纬度"
+msgstr "location_x: 地理位置纬度"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "location_y: Y坐标信息"
+msgstr "location_y: Y坐标信息"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "location_y: 地理位置经度"
+msgstr "location_y: 地理位置经度"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "longitude: 地理位置经度"
+msgstr "longitude: 地理位置经度"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "media_id: 图片媒体文件id，可以调用获取媒体文件接口拉取数据"
+msgstr "media_id: 图片媒体文件id，可以调用获取媒体文件接口拉取数据"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "media_id: 视频媒体文件id，可以调用获取媒体文件接口拉取数据"
+msgstr "media_id: 视频媒体文件id，可以调用获取媒体文件接口拉取数据"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "media_id: 语音媒体文件id，可以调用获取媒体文件接口拉取数据"
+msgstr "media_id: 语音媒体文件id，可以调用获取媒体文件接口拉取数据"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "media_id:通过上传多媒体文件，得到的 id"
+msgstr "media_id:通过上传多媒体文件，得到的 id"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "msg结构提示"
+msgstr "msg结构提示"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.department,name:0
+msgid "name"
+msgstr "名称"
+
+#. module: odoosoft_wechat_enterprise
+#: code:addons/odoosoft_wechat_enterprise/models/department.py:28
+#, python-format
+msgid "name must be unique each parent!"
+msgstr "不能创建名称重复的部门!"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.user:odoosoft_wechat_enterprise.view_wechat_enterprise_force_user_form
+#: view:odoosoft.wechat.enterprise.user.batch.invite.wizard:odoosoft_wechat_enterprise.view_wechat_enterprise_user_batch_invite_wizard_form
+#: view:odoosoft.wechat.enterprise.user.batch.wizard:odoosoft_wechat_enterprise.view_wechat_enterprise_user_batch_wizard_form
+#: view:odoosoft.wechat.enterprise.user.wizard:odoosoft_wechat_enterprise.view_wechat_enterprise_user_wizard_inherit
+msgid "or"
+msgstr "或者"
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.filter,event_type:0
+msgid "pic_photo_or_album"
+msgstr "弹出拍照或者相册发图"
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.filter,event_type:0
+msgid "pic_sysphoto"
+msgstr "弹出系统拍照发图"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "pictures: 图片列表"
+msgstr "pictures: 图片列表"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "pictures_info: 发送的图片信息"
+msgstr "pictures_info: 发送的图片信息"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "poiname: 朋友圈POI的名字，可能为空"
+msgstr "poiname: 朋友圈POI的名字，可能为空"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "precision: 地理位置精度"
+msgstr "precision: 地理位置精度"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "recognition:"
+msgstr "recognition:"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "reply结构提示:"
+msgstr "reply结构提示:"
+
+#. module: odoosoft_wechat_enterprise
+#: field:odoosoft.wechat.enterprise.message,result:0
+msgid "result"
+msgstr "结果"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "scale: 地图缩放大小"
+msgstr "scale: 地图缩放大小"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "scale: 精度，可理解为精度或者比例尺、越精细的话 scale越高"
+msgstr "scale: 精度，可理解为精度或者比例尺、越精细的话 scale越高"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "scan_code_info: 扫描信息"
+msgstr "scan_code_info: 扫描信息"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "scan_result: 扫描结果，即二维码对应的字符串信息"
+msgstr "scan_result: 扫描结果，即二维码对应的字符串信息"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "scan_type: 扫描类型，一般是qrcode"
+msgstr "scan_type: 扫描类型，一般是qrcode"
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.filter,event_type:0
+msgid "scancode_push"
+msgstr "扫码推事件"
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.filter,event_type:0
+msgid "scancode_waitmsg"
+msgstr "扫码推事件且弹出“消息接收中”提示框"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "source: 成员UserID"
+msgstr "source: 成员UserID"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "source:回复的来源用户，通常是发送回复的用户"
+msgstr "source:回复的来源用户，通常是发送回复的用户"
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.filter,event_type:0
+msgid "subscribe"
+msgstr "成员关注"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "target:回复的目标用户"
+msgstr "target:回复的目标用户"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "thumb_media_id: 视频消息缩略图的媒体id，可以调用获取媒体文件接口拉取数据"
+msgstr "thumb_media_id: 视频消息缩略图的媒体id，可以调用获取媒体文件接口拉取数据"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "time:回复的发送时间，一个 UNIX 时间戳"
+msgstr "time:回复的发送时间，一个 UNIX 时间戳"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "title:图文回复标题"
+msgstr "title:图文回复标题"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "title:视频回复的标题"
+msgstr "title:视频回复的标题"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "type: 消息类型"
+msgstr "type: 消息类型"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "type:回复类型"
+msgstr "type:回复类型"
+
+#. module: odoosoft_wechat_enterprise
+#: selection:odoosoft.wechat.enterprise.filter,event_type:0
+msgid "unsubscribe"
+msgstr "成员取消关注"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "url: 事件KEY值，设置的跳转URL"
+msgstr "url: 事件KEY值，设置的跳转URL"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "url:点击图文消息跳转链接"
+msgstr "url:点击图文消息跳转链接"
+
+#. module: odoosoft_wechat_enterprise
+#: code:addons/odoosoft_wechat_enterprise/models/user.py:48
+#: code:addons/odoosoft_wechat_enterprise/models/user.py:239
+#, python-format
+msgid "wechat_login, mobile, email can not be all none"
+msgstr "微信账号,手机,email can not be all none"
+
+#. module: odoosoft_wechat_enterprise
+#: sql_constraint:odoosoft.wechat.enterprise.department:0
+msgid "不能创建名称重复的部门!"
+msgstr "不能创建名称重复的部门!"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.ui.menu,name:odoosoft_wechat_enterprise.menuitem_wechat_home_page_enterprise
+msgid "企业号官网"
+msgstr "企业号官网"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.actions.act_window,name:odoosoft_wechat_enterprise.action_wechat_enterprise_message
+msgid "企业消息"
+msgstr "企业消息"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.actions.act_window,name:odoosoft_wechat_enterprise.action_wechat_enterprise_account
+msgid "企业账号"
+msgstr "企业账号"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_form
+msgid "你需要给 ArticlesReply 添加 article 来增加图文，使用 ArticlesReply 的 add_article 方法或者设置 ArticlesReply 的 articles 属性。"
+msgstr "你需要给 ArticlesReply 添加 article 来增加图文，使用 ArticlesReply 的 add_article 方法或者设置 ArticlesReply 的 articles 属性。"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.actions.act_window,name:odoosoft_wechat_enterprise.action_wechat_enterprise_user_wizard
+msgid "创建关联微信账户"
+msgstr "创建关联微信账户"
+
+#. module: odoosoft_wechat_enterprise
+#: view:res.users:odoosoft_wechat_enterprise.view_res_users_form_inherit
+msgid "创建并且绑定微信账户"
+msgstr "创建并且绑定微信账户"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.user.batch.wizard:odoosoft_wechat_enterprise.view_wechat_enterprise_user_batch_wizard_form
+msgid "创建结果"
+msgstr "创建结果"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.message:odoosoft_wechat_enterprise.view_wechat_enterprise_message_form
+msgid "发送结果"
+msgstr "发送结果"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.application:odoosoft_wechat_enterprise.view_wechat_enterprise_application_form
+msgid "回调地址为:"
+msgstr "回调地址为:"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.ui.menu,name:odoosoft_wechat_enterprise.menuitem_wechat_home_page
+msgid "官网"
+msgstr "官网"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.actions.act_window,name:odoosoft_wechat_enterprise.action_wechat_enterprise_application
+#: model:ir.ui.menu,name:odoosoft_wechat_enterprise.menuitem_wechat_en_application
+msgid "应用"
+msgstr "应用"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.actions.act_window,name:odoosoft_wechat_enterprise.action_wechat_force_create_user
+msgid "强制创建微信账户"
+msgstr "强制创建微信账户"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.ui.menu,name:odoosoft_wechat_enterprise.menuitem_wechat_force_create_user
+msgid "强制创建用户"
+msgstr "强制创建用户"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.ui.menu,name:odoosoft_wechat_enterprise.menuitem_wechat_enterprise_root
+msgid "微信企业号"
+msgstr "微信企业号"
+
+#. module: odoosoft_wechat_enterprise
+#: model:res.groups,name:odoosoft_wechat_enterprise.group_wechat_enterprise_admin
+msgid "微信管理员"
+msgstr "微信管理员"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.department:odoosoft_wechat_enterprise.view_wechat_enterprise_department_form
+msgid "所属用户"
+msgstr "所属用户"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.ui.menu,name:odoosoft_wechat_enterprise.menuitem_wechat_en_message_manage
+msgid "所有消息"
+msgstr "所有消息"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.ui.menu,name:odoosoft_wechat_enterprise.menuitem_wechat_en_user_manage
+msgid "所有用户"
+msgstr "所有用户"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.ui.menu,name:odoosoft_wechat_enterprise.menuitem_wechat_server_sync
+msgid "手动同步服务器"
+msgstr "手动同步服务器"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.actions.act_url,name:odoosoft_wechat_enterprise.action_wechat_homepage_enterprise
+msgid "打开企业号官网"
+msgstr "打开企业号官网"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.user.batch.wizard:odoosoft_wechat_enterprise.view_wechat_enterprise_user_batch_wizard_form
+msgid "批量创建"
+msgstr "批量创建"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.actions.act_window,name:odoosoft_wechat_enterprise.action_wechat_batch_user
+msgid "批量创建微信账户"
+msgstr "批量创建微信账户"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.ui.menu,name:odoosoft_wechat_enterprise.menuitem_wechat_batch_user
+msgid "批量创建用户"
+msgstr "批量创建用户"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.user.batch.invite.wizard:odoosoft_wechat_enterprise.view_wechat_enterprise_user_batch_invite_wizard_form
+msgid "批量邀请"
+msgstr "批量邀请"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.actions.act_window,name:odoosoft_wechat_enterprise.action_wechat_user_batch_invite
+msgid "批量邀请关注"
+msgstr "批量邀请关注"
+
+#. module: odoosoft_wechat_enterprise
+#: model:res.groups,name:odoosoft_wechat_enterprise.group_wechat_enterprise_user
+msgid "普通用户"
+msgstr "普通用户"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.filter:odoosoft_wechat_enterprise.view_wechat_enterprise_filter_search
+msgid "未激活"
+msgstr "未激活"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.user:odoosoft_wechat_enterprise.view_wechat_enterprise_user_form
+msgid "本地强制删除"
+msgstr "本地强制删除"
+
+#. module: odoosoft_wechat_enterprise
+#: sql_constraint:odoosoft.wechat.enterprise.account:0
+#: sql_constraint:odoosoft.wechat.enterprise.application:0
+#: sql_constraint:odoosoft.wechat.enterprise.map:0
+msgid "标示码不能重复!"
+msgstr "标示码不能重复!"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.actions.act_window,name:odoosoft_wechat_enterprise.action_wechat_enterprise_map
+msgid "模块与app关联"
+msgstr "模块与app关联"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.ui.menu,name:odoosoft_wechat_enterprise.menuitem_wechat_en_map
+msgid "模块关联"
+msgstr "模块关联"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.ui.menu,name:odoosoft_wechat_enterprise.menuitem_wechat_en_template_manage
+#: model:ir.ui.menu,name:odoosoft_wechat_enterprise.menuitem_wechat_en_template_root
+msgid "模板"
+msgstr "模板"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.ui.menu,name:odoosoft_wechat_enterprise.menuitem_wechat_en_message
+msgid "消息"
+msgstr "消息"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.message:odoosoft_wechat_enterprise.view_wechat_enterprise_message_form
+msgid "消息内容"
+msgstr "消息内容"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.actions.act_window,name:odoosoft_wechat_enterprise.action_wechat_enterprise_template
+msgid "消息模板"
+msgstr "消息模板"
+
+#. module: odoosoft_wechat_enterprise
+#: model:res.groups,name:odoosoft_wechat_enterprise.group_wechat_enterprise_template
+msgid "管理模板"
+msgstr "管理模板"
+
+#. module: odoosoft_wechat_enterprise
+#: model:res.groups,name:odoosoft_wechat_enterprise.group_wechat_enterprise_message
+msgid "管理消息"
+msgstr "管理消息"
+
+#. module: odoosoft_wechat_enterprise
+#: model:res.groups,name:odoosoft_wechat_enterprise.group_wechat_enterprise_filter
+msgid "管理过滤器"
+msgstr "管理过滤器"
+
+#. module: odoosoft_wechat_enterprise
+#: model:res.groups,name:odoosoft_wechat_enterprise.group_wechat_enterprise_contact
+msgid "管理通讯录"
+msgstr "管理通讯录"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.actions.act_window,name:odoosoft_wechat_enterprise.action_wechat_filter_template_system
+#: model:ir.ui.menu,name:odoosoft_wechat_enterprise.menuitem_wechat_filter_template_system
+msgid "系统过滤器"
+msgstr "系统过滤器"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.actions.act_window,name:odoosoft_wechat_enterprise.action_wechat_enterprise_log
+#: model:ir.ui.menu,name:odoosoft_wechat_enterprise.menuitem_wechat_log_root
+msgid "记录"
+msgstr "记录"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.ui.menu,name:odoosoft_wechat_enterprise.menuitem_wechat_enterprise_config
+msgid "设置"
+msgstr "设置"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.ui.menu,name:odoosoft_wechat_enterprise.menuitem_wechat_en_account
+msgid "账户"
+msgstr "账户"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.actions.act_window,name:odoosoft_wechat_enterprise.action_wechat_enterprise_filter
+#: model:ir.ui.menu,name:odoosoft_wechat_enterprise.menuitem_wechat_en_filter
+#: model:ir.ui.menu,name:odoosoft_wechat_enterprise.menuitem_wechat_en_filter_manage
+msgid "过滤器"
+msgstr "过滤器"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.actions.act_window,name:odoosoft_wechat_enterprise.action_wechat_filter_template
+#: model:ir.ui.menu,name:odoosoft_wechat_enterprise.menuitem_wechat_filter_template
+msgid "过滤器模板"
+msgstr "过滤器模板"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.user:odoosoft_wechat_enterprise.view_wechat_enterprise_user_form
+msgid "远程强制创建"
+msgstr "远程强制创建"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.user:odoosoft_wechat_enterprise.view_wechat_enterprise_user_form
+msgid "远程强制更新"
+msgstr "远程强制更新"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.actions.act_window,name:odoosoft_wechat_enterprise.action_wechat_enterprise_user
+#: model:ir.ui.menu,name:odoosoft_wechat_enterprise.menuitem_wechat_en_user
+msgid "通讯录"
+msgstr "通讯录"
+
+#. module: odoosoft_wechat_enterprise
+#: view:odoosoft.wechat.enterprise.user:odoosoft_wechat_enterprise.view_wechat_enterprise_user_form
+msgid "邀请关注"
+msgstr "邀请关注"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.ui.menu,name:odoosoft_wechat_enterprise.menuitem_wechat_department
+msgid "部门"
+msgstr "部门"
+
+#. module: odoosoft_wechat_enterprise
+#: model:ir.actions.act_window,name:odoosoft_wechat_enterprise.action_wechat_department
+msgid "部门管理"
+msgstr "部门管理"
+

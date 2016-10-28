@@ -5,7 +5,7 @@ from wechatpy.enterprise import WeChatClient, WeChatCrypto, parse_message, creat
 from wechatpy.exceptions import InvalidSignatureException
 from werkzeug.exceptions import abort
 import logging
-from openerp import http
+from odoo import http
 
 _logger = logging.getLogger(__name__)
 

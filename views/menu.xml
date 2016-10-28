@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<openerp>
+<odoo>
     <data>
         <record id="action_wechat_enterprise_account" model="ir.actions.act_window">
             <field name="name">企业账号</field>
@@ -172,4 +172,4 @@
                     res_model="odoosoft.wechat.enterprise.user.batch.invite.wizard" src_model="odoosoft.wechat.enterprise.user"
                     view_mode="form" target="new" view_type="form"/>
     </data>
-</openerp>
+</odoo>

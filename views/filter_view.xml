@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<openerp>
+<odoo>
     <data>
         <record id="view_wechat_enterprise_filter_search" model="ir.ui.view">
             <field name="name">view.odoosoft.wechat.enterprise.filter.search</field>
@@ -229,4 +229,4 @@
             </field>
         </record>
     </data>
-</openerp>
+</odoo>

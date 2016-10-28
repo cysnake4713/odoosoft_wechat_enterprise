@@ -7,9 +7,9 @@ __author__ = 'cysnake4713'
 import logging
 
 from urllib import quote_plus
-from openerp import tools
-from openerp import models, fields, api
-from openerp.tools.translate import _
+from odoo import tools
+from odoo import models, fields, api
+from odoo.tools.translate import _
 from wechatpy.enterprise import WeChatClient
 
 _logger = logging.getLogger(__name__)

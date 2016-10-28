@@ -1,10 +1,10 @@
 # coding=utf-8
 
 import time
-from openerp import tools
+from odoo import tools
 import logging
-from openerp import models, fields, api, exceptions
-from openerp.tools.translate import _
+from odoo import models, fields, api, exceptions
+from odoo.tools.translate import _
 from wechatpy.enterprise import WeChatClient
 from wechatpy.exceptions import WeChatClientException
 

@@ -2,9 +2,9 @@ __author__ = 'cysnake4713'
 
 # coding=utf-8
 import logging
-from openerp import tools
-from openerp import models, fields, api
-from openerp.tools.translate import _
+from odoo import tools
+from odoo import models, fields, api
+from odoo.tools.translate import _
 import dateutil.relativedelta as relativedelta
 
 _logger = logging.getLogger(__name__)

@@ -1,8 +1,8 @@
 __author__ = 'cysnake4713'
 # coding=utf-8
-from openerp import tools, exceptions
-from openerp import models, fields, api
-from openerp.tools.translate import _
+from odoo import tools, exceptions
+from odoo import models, fields, api
+from odoo.tools.translate import _
 
 
 class ResUserInherit(models.Model):
